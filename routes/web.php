@@ -18,7 +18,9 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/felvy0', function () {
+    return view('felvy');
+});
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');

@@ -1,0 +1,485 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.utama {
+    position: relative;
+    width: 100%;
+    height: 820px;
+    background-image: url(/img/background_1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.utama h1 {
+    /* LINCAH DAN SEHAT ADALAH KENYAMANAN SI MUNGIL */
+
+    position: absolute;
+    width: 570px;
+    height: 210px;
+    left: 116px;
+    top: 180px;
+
+    font-style: "Barlow Condensed";
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 110%;
+    /* or 70px */
+
+    letter-spacing: 0.005em;
+
+    color: #3a3a3a;
+
+    text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.2);
+}
+.utama h2 {
+    /* Si Mungil akan merasa nyaman jika kita rawat dengan sepenuh hati. Kenyamanannya bisa dilihat dari tingkah lakunya yang lincah dan gesit */
+
+    position: absolute;
+    width: 550px;
+    height: 126px;
+    left: 112px;
+    top: 410px;
+
+    font-style: "Barlow Condensed";
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 130%;
+    /* or 42px */
+
+    letter-spacing: 0em;
+
+    color: #5a5a5a;
+}
+/* Button Login */
+.open-button {
+    background-color: #52734d;
+    color: rgb(255, 255, 255);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    top: 600px;
+    left: 112px;
+    width: 130px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.open-button-reg {
+    background-color: #ddffbc;
+    color: #000;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    top: 600px;
+    left: 250px;
+    width: 130px;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+.open-button-add {
+    background-color: #ddffbc;
+    color: #000;
+    padding: 16px 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+    width: 280px;
+    border-color: #000;
+    border-width: 5px;
+    left: 490px;
+}
+
+/* Pop up form */
+.form-popup {
+    display: none;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #ddffbc;
+    margin-left: -250px;
+    margin-top: -250px;
+    border: 3px solid #000000;
+    z-index: 9;
+}
+.form-popup-reg {
+    display: none;
+    width: 500px;
+    height: 550x;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #ddffbc;
+    margin-left: -250px;
+    margin-top: -250px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+.form-popup-reg p,
+.form-popup p {
+    font-style: "Barlow Condensed";
+    font-weight: 650;
+    font-size: 50px;
+    line-height: 90px;
+    text-align: center;
+    vertical-align: top;
+
+    /* identical to box height */
+
+    letter-spacing: 0em;
+
+    color: #3a3a3a;
+
+    text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.25);
+}
+
+.form-popup-add {
+    display: none;
+    width: 500px;
+    height: 630px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #ddffbc;
+    margin-left: -250px;
+    margin-top: -250px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+/* .form-container h1 {
+    position: absolute;
+    top: 60px;
+} */
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn-submit {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel-login {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .btn-submit:hover,
+.open-button:hover,
+.open-button-reg:hover {
+    opacity: 1;
+}
+
+.btn-1 {
+    position: absolute;
+    width: 167px;
+    height: 50px;
+    left: 112px;
+    top: 742px;
+
+    background-color: #52734d;
+    border-radius: 25px;
+}
+.btn-1 h1 {
+    text-decoration: none;
+}
+.btn-2 {
+    position: absolute;
+    width: 167px;
+    height: 50px;
+    left: 300px;
+    top: 742px;
+
+    background-color: #52734d;
+    border-radius: 25px;
+}
+
+.tentang_felvy {
+    position: relative;
+    width: 100%;
+    height: 966px;
+    background-image: url(/img/background_2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+.tentang_felvy header {
+    position: absolute;
+    width: 475px;
+    height: 80px;
+    left: 760px;
+    top: 105px;
+    font-style: "Barlow Condensed";
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 77px;
+    /* identical to box height */
+
+    letter-spacing: 0.035em;
+
+    color: #3a3a3a;
+
+    text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.25);
+}
+.tentang_felvy p {
+    position: absolute;
+    width: 466px;
+    height: 118px;
+    left: 70px;
+    top: 225px;
+    font-style: "Barlow Condensed";
+
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    /* or 42px */
+
+    letter-spacing: 0.005em;
+
+    color: #5a5a5a;
+}
+.tentang_felvy h2 {
+    position: absolute;
+    width: 250px;
+    height: 38px;
+    left: 252px;
+    top: 410px;
+
+    font-style: "Barlow Condensed";
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.035em;
+
+    color: #000000;
+}
+.btn-pelatihan {
+    position: absolute;
+    width: 168px;
+    height: 199px;
+    left: 180px;
+    top: 650px;
+    padding-left: 15px;
+
+    background: #52734d;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.btn-kesehatan {
+    position: absolute;
+    width: 168px;
+    height: 199px;
+    left: 490px;
+    top: 370px;
+    padding-left: 15px;
+
+    background: #52734d;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.btn-penitipan {
+    position: absolute;
+    width: 168px;
+    height: 199px;
+    left: 800px;
+    top: 610px;
+    padding-left: 15px;
+    background: #52734d;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.btn-grooming {
+    position: absolute;
+    width: 168px;
+    height: 199px;
+    left: 945px;
+    top: 298px;
+    padding-left: 15px;
+
+    background: #52734d;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.jenis_kucing {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    background-image: url(/img/background_3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    left: 65px;
+    top: 325px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+.jenis_kucing header {
+    font-style: "Barlow Condensed";
+    font-weight: 650;
+    font-size: 50px;
+    line-height: 90px;
+    text-align: center;
+    vertical-align: top;
+
+    /* identical to box height */
+
+    letter-spacing: 0em;
+
+    color: #3a3a3a;
+
+    text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.25);
+}
+/* .carousel img {
+width: 1190px;
+height: 490px;
+border-radius: 25px;
+} */
+.carousel {
+    width: 1190px;
+    height: 490px;
+    border-radius: 25px;
+}
+.kucing_hilang {
+    position: relative;
+    width: 100%;
+    height: 1024px;
+    background-image: url(/img/background_4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.kucing_hilang h1 {
+    font-style: "Barlow Condensed";
+    font-weight: 650;
+    font-size: 50px;
+    line-height: 90px;
+    text-align: center;
+    vertical-align: top;
+
+    /* identical to box height */
+
+    letter-spacing: 0em;
+
+    color: #3a3a3a;
+
+    text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.25);
+}
+.adopsi {
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+    background-image: url(/img/background_5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Card slider */
+/* html, body{
+    margin: 0;
+    padding: 0;
+  } */
+/* Card slider */
+/* Card slider */
+.wrapper {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+h2 {
+    font-family: sans-serif;
+    color: #fff;
+}
+.carousel {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-prev,
+.slick-next {
+    background: #000;
+    border-radius: 15px;
+    border-color: transparent;
+}
+.card {
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 15px #ccc;
+}
+.card-header {
+    height: 50%;
+}
+
+.card-body {
+    background: #fff;
+    width: 100%;
+    vertical-align: top;
+}
+.card-content {
+    text-align: left;
+    color: #333;
+    padding: 15px;
+}
+.card-text {
+    font-size: 12px;
+    font-weight: 300;
+}
