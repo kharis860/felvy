@@ -16,10 +16,10 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('felvy');
 });
 Route::get('/felvy0', function () {
-    return view('felvy');
+    return view('felvypro');
 });
 Auth::routes();
 
