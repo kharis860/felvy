@@ -432,18 +432,14 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                    <p class="card-text" style="text-align: left">Nama Kucing&emsp;&ensp;:</p>
-                                    <p class="card-text" style="text-align: left">Nama Pemilik&emsp;:</p>
-                                    <p class="card-text" style="text-align: left">Tanggal Hilang:</p>
-                                    <p class="card-text" style="text-align: left">Nomor HP&emsp;:</p>
-                                    <p class="card-text" style="text-align: left">Keterangan&emsp;:</p>
-
-
-
-
-
+                                    <p class="card-text" style="text-align: left">Nama Kucing&emsp;&emsp;&nbsp;:</p>
+                                    <p class="card-text" style="text-align: left">Nama Pemilik&emsp;&emsp;:</p>
+                                    <p class="card-text" style="text-align: left">Tanggal Hilang&emsp;&nbsp;:</p>
+                                    <p class="card-text" style="text-align: left">Nomor HP&emsp;&emsp;&emsp;&nbsp;:</p>
+                                    <p class="card-text" style="text-align: left">Keterangan&emsp;&emsp;&emsp;:</p>
                                     </div>
                                     <div class="modal-footer">
+                                    {{-- end modal --}}
 
                                     </div>
                                 </div>
@@ -459,7 +455,10 @@
                             <div class="card-body">
                             <h4 class="card-title">01 Mei 2022</h4>
                             <p class="card-text">Hilang di daerah sekaran, di sekitar area UNNES</p>
-                            <a href="#" class="btn btn-success">Temukan</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalKucingHilang1">
+                                Detail
+                            </button>
                             </div>
                         </div>
                         </div>
@@ -470,7 +469,11 @@
                             <div class="card-body">
                                 <h4 class="card-title">04 Juni 2022</h4>
                                 <p class="card-text">Ciri-ciri kucing berbulu hitam pekat dan memakai kalung berwarna biru</p>
-                                <a href="#" class="btn btn-success">Temukan</a>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalKucingHilang1">
+                                Detail
+                                </button>
+
                             </div>
                             </div>
                         </div>

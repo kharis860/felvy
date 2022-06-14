@@ -372,7 +372,7 @@
     <div class="container-fluid">
         <h1>BANTU MEREKA KEMBALI KE RUMAH</h1>
         <div class="wrapper">
-            <button class="open-button-add" data-bs-toggle="modal" data-bs-target="#exampleModal" >add</button>
+            <button class="open-button-add" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: 15px">add</button>
         </div>
             {{-- modal kucing hilang --}}
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -394,7 +394,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="tgl_hilang" class="col-form-label">Tanggal Hilang:</label>
-                            <input type="text" class="form-control" id="tgl_hilang">
+                            <input type="date" data-date="" data-date-format="DD MMMM YYYY"class="form-control" id="tgl_hilang">
                         </div>
                         <div class="mb-3">
                             <label for="nomor_pemilik" class="col-form-label">Nomor yang Dapat Dihubungi:</label>
@@ -419,7 +419,7 @@
             <div id="slideKucingHlng" class="carousel slide" data-bs-ride="carousel">
 
                 <!-- Indicators/dots -->
-                <div class="carousel-indicators">
+                <div class="carousel-indicators" id="indikator-karousel">
                     <button type="button" data-bs-target="#slideKucingHlng" data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#slideKucingHlng" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#slideKucingHlng" data-bs-slide-to="2"></button>
@@ -435,8 +435,8 @@
                         <div class="card" >
                             <img class="card-img" src="img/anonim-cat.png" alt="Card image">
                             <div class="card-body">
-                            <h4 class="card-title">Kucing 1</h4>
-                            <p class="card-text">Ilang gatau kemana gada kabar. Dah seminggu ga balek. Moga ga kenapa - kenapa</p>
+                            <h4 class="card-title">25 Mei 2022</h4>
+                            <p class="card-text">kurang pengawasan, kemungkinan besar kabur dari rumah lewat jendela</p>
                             <a href="#" class="btn btn-success">Temukan</a>
                             </div>
                         </div>
@@ -446,8 +446,8 @@
                         <div class="card" >
                             <img class="card-img" src="img/anonim-cat.png" alt="Card image">
                             <div class="card-body">
-                            <h4 class="card-title">Kucing 1</h4>
-                            <p class="card-text">Ilang gatau kemana gada kabar. Dah seminggu ga balek. Moga ga kenapa - kenapa</p>
+                            <h4 class="card-title">01 Mei 2022</h4>
+                            <p class="card-text">Hilang di daerah sekaran, di sekitar area sekaran, UNNES. warna oren, berbadan kekar</p>
                             <a href="#" class="btn btn-success">Temukan</a>
                             </div>
                         </div>
@@ -457,8 +457,8 @@
                             <div class="card" >
                             <img class="card-img" src="img/anonim-cat.png" alt="Card image">
                             <div class="card-body">
-                                <h4 class="card-title">Kucing 1</h4>
-                                <p class="card-text">Ilang gatau kemana gada kabar. Dah seminggu ga balek. Moga ga kenapa - kenapa</p>
+                                <h4 class="card-title">04 Juni 2022</h4>
+                                <p class="card-text">Ciri-ciri kucing berbulu hitam pekat dan memakai kalung berwarna biru</p>
                                 <a href="#" class="btn btn-success">Temukan</a>
                             </div>
                             </div>
@@ -473,8 +473,8 @@
                         <div class="card" >
                             <img class="card-img" src="img/anonim-cat.png" alt="Card image">
                             <div class="card-body">
-                            <h4 class="card-title">Kucing 1</h4>
-                            <p class="card-text">Ilang gatau kemana gada kabar. Dah seminggu ga balek. Moga ga kenapa - kenapa </p>
+                            <h4 class="card-title">07 Juni 2022</h4>
+                            <p class="card-text">Hilang saat kami sekeluarga bertamasya, kucing anggora warna silver mata biru</p>
                             <a href="#" class="btn btn-success">Temukan</a>
                             </div>
                         </div>
@@ -484,8 +484,8 @@
                         <div class="card" >
                             <img class="card-img" src="img/anonim-cat.png" alt="Card image">
                             <div class="card-body">
-                            <h4 class="card-title">Kucing 2</h4>
-                            <p class="card-text">Ilang gatau kemana gada kabar. Dah seminggu ga balek. Moga ga kenapa - kenapa</p>
+                            <h4 class="card-title">10 juni 2022</h4>
+                            <p class="card-text">Tidak sengaja tertinggal ketika sedang bepergian di pantai Marina</p>
                             <a href="#" class="btn btn-success">Temukan</a>
                             </div>
                         </div>
@@ -515,36 +515,137 @@
         <h1>ADOPSI KUCING</h1>
         {{-- button modal adopsi --}}
         <div class="wrapper">
-            <button class="open-button-add" data-bs-toggle="modal" data-bs-target="#ModalAdopsi">add</button>
+            <button class="open-button-add" button type="button" id="btn-addItemAdopsi" class="addItem" data-bs-toggle="modal" data-bs-target="#modalAdopsi">add</button>
         </div>
         {{-- modal adopsi --}}
-        <div class="modal fade" id="ModalAdopsi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modalAdopsi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Form Kucing Hilang</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Form Adopsi</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <form>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">info kucing:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message-text" class="col-form-label">info kucing:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    </form>
+                  <div class="modal-body">
+                      <form>
+                      <div class="mb-3">
+                          <label for="ras-kucing" class="col-form-label">Jenis Ras Kucing:</label>
+                          <input type="text" class="form-control" id="ras-kucing">
+                      </div>
+                      <div class="mb-3">
+                        <label for="umur" class="col-form-label">Umur:</label>
+                        <input type="text" class="form-control" id="umur">
+                      </div>
+                      <div class="mb-3">
+                          <label for="nm_pemilik_asal" class="col-form-label">Nama Pemilik Asal:</label>
+                          <input type="text" class="form-control" id="nm_pemilik_asal">
+                      </div>
+                      <div class="mb-3">
+                        <label for="nomor_pemilik_asal" class="col-form-label">Nomor yang Dapat Dihubungi:</label>
+                        <input type="text" class="form-control" id="nomor_pemilik_asal">
+                      </div>
+                      <div class="mb-3">
+                        <label for="biaya_adopsi" class="col-form-label">Biaya Adopsi:</label>
+                        <input type="number" class="form-control" id="biaya_adopsi" min="0" max="999999" step="50000">
+                      </form>
+                  </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-primary" id="addItemAdopsi" data-bs-dismiss="modal">Save</button>
                 </div>
                 </div>
             </div>
+    </div>
+    <div id="slideAdopsi" class="carousel slide" data-bs-ride="carousel">
 
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators" id="indikator-karousel">
+            <button type="button" data-bs-target="#slideAdopsi" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#slideAdopsi" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#slideAdopsi" data-bs-slide-to="2"></button>
+        </div>
 
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner" id="carousel-inner-adopsi">
+            <div class="carousel-item active" id="carousel-item1-adopsi">
+            <div class="row" id="row1-adopsi">
+
+                <div class="col-md-4 mb-3">
+                <div class="card" >
+                    <img class="card-img" src="img/anonim-cat.png" alt="Card image">
+                    <div class="card-body">
+                    <h4 class="card-title">Anggora</h4>
+                    <p class="card-text">Rp. 0</p>
+                    <a href="#" class="btn btn-success">Temukan</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                <div class="card" >
+                    <img class="card-img" src="img/anonim-cat.png" alt="Card image">
+                    <div class="card-body">
+                    <h4 class="card-title">Persia</h4>
+                    <p class="card-text">Rp. 100000</p>
+                    <a href="#" class="btn btn-success">Temukan</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card" >
+                    <img class="card-img" src="img/anonim-cat.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Maine Coon</h4>
+                        <p class="card-text">Rp.50000</p>
+                        <a href="#" class="btn btn-success">Temukan</a>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            <div class="carousel-item" id="carousel-item2-adopsi">
+            <div class="row" id="row2-adopsi">
+
+                <div class="col-md-4 mb-3">
+                <div class="card" >
+                    <img class="card-img" src="img/anonim-cat.png" alt="Card image">
+                    <div class="card-body">
+                    <h4 class="card-title">American Short Hair</h4>
+                    <p class="card-text">Rp. 250000</p>
+                    <a href="#" class="btn btn-success">Temukan</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                <div class="card" >
+                    <img class="card-img" src="img/anonim-cat.png" alt="Card image">
+                    <div class="card-body">
+                    <h4 class="card-title">Sphynx</h4>
+                    <p class="card-text">Rp. 150000</p>
+                    <a href="#" class="btn btn-success">Temukan</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" id="control-prev" type="button" data-bs-target="#slideAdopsi" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" id="control-next" type="button" data-bs-target="#slideAdopsi" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <!-- Left and right controls/icons -->
+
+    {{-- end card carousel kucing hilang --}}
+
+</div>
     </div>
 </section>
 
@@ -601,36 +702,82 @@
     var panjang_row2 = document.getElementById("row2").children.length;
     var panjang_row3 = 1;
 
+    // script kucing hilang
     // Inputan
-
     $(document).ready(function(){
         $('#exampleModal').on('click' , '#btn-addItem', function(){
         const tgl_hilang = $('#tgl_hilang').val();
+        var splitedDate = tgl_hilang.split("-");
+        var month = splitedDate[1].replace(/^0+/, '');
+        var array_month = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "OKtober", "November", "Desember"];
+        var newDate = splitedDate[2] + " " + array_month[month] + " " + splitedDate[0];
+
         const ket_hilang = $('#ket_hilang').val();
         const nomor_pemilik = $('#nomor_pemilik').val();
-        $(".modal").on("hidden.bs.modal", function(){
-        $(".modal-body1").html("");
-        });
+
+      $("#modal").on("hidden.bs.modal", function(){
+        $(".modal-body").html("");
+      });
+
         if (panjang_row2 < 3){
-            $('#row2').append(
-            '<div class="col-md-4 mb-3"> <div class="card" > <img class="card-img" src="img/anonim-cat.png" alt="Card image"> <div class="card-body"> <h4 class="card-title">'+tgl_hilang+'</h4> <p class="card-text">'+ket_hilang+'</p> <a href="#" class="btn btn-success">Temukan</a> </div> </div> </div>');
-            panjang_row2 = 4;
+
+          $('#row2').append(
+            '<div class="col-md-4 mb-3"> <div class="card" > <img class="card-img" src="img/anonim-cat.png" alt="Card image"> <div class="card-body"> <h4 class="card-title">'+newDate+'</h4> <p class="card-text">'+ket_hilang+'</p> <a href="#" class="btn btn-success">Temukan</a> </div> </div> </div>');
+          panjang_row2 = 4;
         } else {
-            if (panjang_row3 == 1 ) {
+          if (panjang_row3 == 1 ) {
             $('#carousel-inner').append(
-            '<div class="carousel-item" id="carousel-item3"> <div class="row" id="row3"> <div class="col-md-4 mb-3"> <div class="card" > <img class="card-img" src="img/anonim-cat.png" alt="Card image"> <div class="card-body"> <h4 class="card-title">'+tgl_hilang+'</h4> <p class="card-text">'+ket_hilang+'</p> <a href="#" class="btn btn-success">Temukan</a> </div> </div> </div> </div> </div>');
+            '<div class="carousel-item" id="carousel-item3"> <div class="row" id="row3"> <div class="col-md-4 mb-3"> <div class="card" > <img class="card-img" src="img/anonim-cat.png" alt="Card image"> <div class="card-body"> <h4 class="card-title">'+newDate+'</h4> <p class="card-text">'+ket_hilang+'</p> <a href="#" class="btn btn-success">Temukan</a> </div> </div> </div> </div> </div>');
             panjang_row3 = 2;
-            } else  if (panjang_row3 = 2) {
-            $('#row3').append(
-            '<div class="col-md-4 mb-3"> <div class="card" > <img class="card-img" src="img/anonim-cat.png" alt="Card image"> <div class="card-body"> <h4 class="card-title">'+tgl_hilang+'</h4> <p class="card-text">'+ket_hilang+'</p> <a href="#" class="btn btn-success">Temukan</a> </div> </div> </div>');
+          } else  if (panjang_row3 = 2) {
+          $('#row3').append(
+            '<div class="col-md-4 mb-3"> <div class="card" > <img class="card-img" src="img/anonim-cat.png" alt="Card image"> <div class="card-body"> <h4 class="card-title">'+newDate+'</h4> <p class="card-text">'+ket_hilang+'</p> <a href="#" class="btn btn-success">Temukan</a> </div> </div> </div>');
             panjang_row3++;
             }
         }
         })
     });
-    </script>
-{{-- code javascript --}}
+    // end script kucing hilang
 
+
+
+    </script>
+
+
+{{-- script adopsi --}}
+<script>
+    var row2_length = document.getElementById("row2-adopsi").children.length;
+    var row3_length = 1;
+
+    // Inputan
+
+    $(document).ready(function(){
+        $('#modalAdopsi').on('click' , '#addItemAdopsi', function(){
+        const ras_kucing = $('#ras-kucing').val();
+        const biaya_adopsi = $('#biaya_adopsi').val();
+        //const nomor_pemilik = $('#').val();
+
+        if (row2_length < 3){
+            $('#row2-adopsi').append(
+            '<div class="col-md-4 mb-3"> <div class="card" > <img class="card-img" src="img/anonim-cat.png" alt="Card image"> <div class="card-body"> <h4 class="card-title">'+ras_kucing+'</h4> <p class="card-text">'+"Rp. " + biaya_adopsi+'</p> <a href="#" class="btn btn-success">Adopsi</a> </div> </div> </div>');
+            row2_length = 4;
+        } else {
+            if (row3_length == 1 ) {
+            $('#carousel-inner-adopsi').append(
+            '<div class="carousel-item" id="carousel-item3-adopsi"> <div class="row" id="row3-adopsi"> <div class="col-md-4 mb-3"> <div class="card" > <img class="card-img" src="img/anonim-cat.png" alt="Card image"> <div class="card-body"> <h4 class="card-title">'+ras_kucing+'</h4> <p class="card-text">'+biaya_adopsi+'</p> <a href="#" class="btn btn-success">Adopsi</a> </div> </div> </div> </div> </div>');
+            row3_length = 2;
+            } else  if (row3_length = 2) {
+            $('#row3-adopsi').append(
+            '<div class="col-md-4 mb-3"> <div class="card" > <img class="card-img" src="img/anonim-cat.png" alt="Card image"> <div class="card-body"> <h4 class="card-title">'+ras_kucing+'</h4> <p class="card-text">'+biaya_adopsi+'</p> <a href="#" class="btn btn-success">Temukan</a> </div> </div> </div>');
+            row3_length++;
+            }
+        }
+        })
+    });
+    </script>
+
+{{-- end script adopsi --}}
+{{-- code javascript --}}
 
 </body>
 </html>
