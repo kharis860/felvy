@@ -11718,10 +11718,43 @@ fieldset:disabled .btn {
 
     color: #5a5a5a;
 }
+.open-button {
+    background-color: #52734d;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    top: 600px;
+    left: 112px;
+    width: 130px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.clear {
+    text-decoration-line: none;
+    text-decoration-color: white;
+}
+.open-button-reg {
+    background-color: #ddffbc;
+    color: #000;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    top: 600px;
+    left: 250px;
+    width: 130px;
+    border-radius: 25px;
+    font-weight: bolder;
+    text-decoration-line: none;
+    text-decoration-color: white;
+}
 .tentang_felvy {
     position: relative;
     width: 100%;
-    height: 966px;
+    height: 859px;
     background-image: url(/img/background_2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -11800,6 +11833,8 @@ fieldset:disabled .btn {
     stroke: #000;
     stroke-width: 1px;
 }
+.btn-pelatihan h1 {
+}
 .btn-kesehatan {
     position: absolute;
     width: 168px;
@@ -11840,4 +11875,229 @@ fieldset:disabled .btn {
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     color: white;
+}
+
+.jenis_kucing {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-image: url(/img/background_3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    overflow: hidden;
+}
+.jenis_kucing header {
+    font-style: "Barlow Condensed";
+    font-weight: 650;
+    font-size: 50px;
+    line-height: 90px;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 250px;
+
+    /* identical to box height */
+
+    letter-spacing: 0em;
+
+    color: #3a3a3a;
+
+    text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.25);
+}
+.carousel-kucing {
+    width: 900px;
+    height: 600px;
+    padding-left: 200px;
+    border: 20px black;
+    border-color: #000000;
+}
+.carousel-inner {
+    border-radius: 25px;
+}
+#bg-jenis {
+    border: 20px black;
+    border-color: #000000;
+}
+#bg-jenis {
+    background-color: #000000;
+}
+#overlay {
+    opacity: 0.7;
+}
+
+#control-prev,
+#control-next {
+    background-color: black;
+    width: 70px;
+    height: 330px;
+    top: 216px;
+}
+
+.kucing_hilang {
+    position: relative;
+    width: 100%;
+    height: 760px;
+    background-image: url(/img/background_4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.kucing_hilang h1 {
+    font-style: "Barlow Condensed";
+    font-weight: 650;
+    font-size: 50px;
+    line-height: 90px;
+    text-align: center;
+    vertical-align: top;
+
+    /* identical to box height */
+
+    letter-spacing: 0em;
+
+    color: #3a3a3a;
+
+    text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.25);
+}
+.wrapper {
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.open-button-add {
+    background-color: #ddffbc;
+    color: #000;
+    padding: 16px 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+    width: 280px;
+    border-color: #000;
+    border-width: 2px;
+    left: 490px;
+}
+
+.adopsi {
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    background-image: url(/img/background_5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.adopsi h1 {
+    font-style: "Barlow Condensed";
+    font-weight: 650;
+    font-size: 50px;
+    line-height: 90px;
+    text-align: center;
+    vertical-align: top;
+
+    /* identical to box height */
+
+    letter-spacing: 0em;
+
+    color: #3a3a3a;
+
+    text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.25);
+}
+.donasi {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-image: url(/img/background_3.1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    overflow: hide;
+    z-index: inherit;
+    margin-top: 880px;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 200px rgba(0, 0, 0, 1);
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+#slideKucingHlng {
+    width: 900px;
+    height: 600px;
+    width: 90%;
+    margin: 0px auto;
+    height: 550px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+.card-img {
+    height: 200px;
+    width: 100%;
+}
+
+/* .carousel-control-prev {
+    background-color: black;
+    width: 70px;
+    height: 370px;
+    top: 150px;
+}
+
+.carousel-control-next {
+    background-color: black;
+    width: 70px;
+    height: 370px;
+    top: 150px;
+} */
+.carousel slide {
+    width: 900px;
+    height: 600px;
+}
+.carousel-kucing-hilang {
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.jumbotron {
+    margin-top: 30px;
+    background-image: url(/img/poor_cat2.jpg);
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+    top: 30px;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    border: #000;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.jumbotron h1 {
+    font-style: "Barlow Condensed";
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    line-height: 90px;
+    text-shadow: 4px 8px 6px rgba(0, 0, 0, 0.5);
+}
+.jumbotron p {
+    color: white;
+    width: 500px;
+    text-align: justify;
+}
+.jumbotron hr {
+    color: white;
+    width: 500px;
+    height: 3px;
+}
+.container-jumbotron {
+    padding-left: 100px;
+    padding-top: 100px;
 }

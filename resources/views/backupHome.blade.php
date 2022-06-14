@@ -18,7 +18,6 @@
 
     <!-- Styles -->
     <link href="{{ asset('/css/felvypro.css') }}" rel="stylesheet">
-
 </head>
 <body>
     <div id="app">
@@ -95,7 +94,7 @@
         <section class="utama">
             <div class="container-fluid">
                     <h1>LINCAH DAN SEHAT ADALAH KENYAMANAN SI MUNGIL</h1>
-                    <h2>Si Mungil akan merasa nyaman jika kita rawat dengan sepenuh hati. Kenyamanannya bisa dilihat dari tingkah lakunya yang lincah dan gesit</h2>
+                        <h2>Si Mungil akan merasa nyaman jika kita rawat dengan sepenuh hati. Kenyamanannya bisa dilihat dari tingkah lakunya yang lincah dan gesit</h2>
 
             </div>
         </section>
@@ -212,161 +211,159 @@
                             {{-- end modal Grooming --}}
             </div>
         </section>
-
-
         <section class="jenis_kucing" id="jenis">
-            <div class="container-fluid">
-                <div class="container">
-                    <header>JENIS - JENIS KUCING</header>
-                        <div class="carousel-kucing">
-                            <div id="carouselJenis" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                                <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="11" aria-label="Slide 12"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                <div class="carousel-item active" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/charteux cat.jpg" class="d-block w-100" alt="..." >
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Chartreux Cat</h5>
-                                    <p>Domestik prancis, bulu pendek, badan besar berotot, bulu abu-abu dan silver, mata jingga.</p>
-
-                                </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/bombay cat.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Bombay cat</h5>
-                                    <p>Domestik India, Bulu berwarna hitam, kepala bundar, hidungnya yang pendek, Tubuhnya yang berotot namun tidak kekar.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/siberian cat.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Siberian cat</h5>
-                                    <p>Kucing hutan Rusia,  bulu lebat serta tubuh yang kuat, bentuk moncong pendek dan agak melengkung, sorot mata bulat dengan warna yang cerah.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/havana brown cat.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Havana brown cat</h5>
-                                    <p>Bulu abu-abu pendek dan berkilau, tubuh ramping dan berotot, mata hijau, Wajah simetris, wajah berbentuk segitiga.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/russian blue cat.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Russian blue </h5>
-                                    <p>Asal Rusia, Bulu biru tebal, leher pendek, badan panjang dan ramping, warna mata hijau mencolok.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/manx cat.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Manx cat</h5>
-                                    <p>Berasal dari Britania Raya, tidak memiliki ekor, mata besar dan bulat,  dada lebar dan tulang punggung melengkung sampai pinggul.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/scottish fold cat.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Scottish fold</h5>
-                                    <p>Domestik Skotlandia, kepala bulat lucu, telinga terlipat ke bawah, mata lebar dan besar, leher pendek, bulunya sedang serta tidak begitu lebat
-                                    .</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/somali cat.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Somali cat</h5>
-                                    <p>Domestik somalia, abyssinian, semi long hair, telinga lebar, ekor lebat, tubuh sedang dan otot.
-                                    </p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/sphynx cat.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Sphynx cat</h5>
-                                    <p>Domestik kanada, tanpa bulu, perawakan ramping namun berotot, kaki panjang dan ramping, mata besar dan bulat  aktif dan penyayang.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/ragdoll.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Ragdoll cat</h5>
-                                    <p>Domestik AS, bulu tidak terlalu panjang, tubuh relatif besar, wajah bulat, mata berwarna biru, bulu terang dengan bagian wajah, telinga, kaki, dan ekor yang cenderung gelap.
-                                    </p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/maine coon.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Maine coon cat</h5>
-                                    <p>Domestik Persia, giant cat, wajah mirip singa, bulu lebat, ekor panjang, tulang kuat dan besar.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" id="bg-jenis">
-                                    <div id="overlay">
-                                    <img src="img/cat/himalayan.png" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                    <h5>Himalayan cat</h5>
-                                    <p>Persilangan ras persia dan siam, warna bulu yang berubah seiring bertambahnya usia, ras kucing bermata biru.</p>
-                                    </div>
-                                </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselJenis" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                  </button>
-                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselJenis" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                  </button>
+        <div class="container-fluid">
+            <div class="container">
+                <header>JENIS - JENIS KUCING</header>
+                    <div class="carousel-kucing">
+                        <div id="carouselJenis" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                            <button type="button" data-bs-target="#carouselJenis" data-bs-slide-to="11" aria-label="Slide 12"></button>
                             </div>
-                            {{-- <button class="carousel-control-prev" id="btnNext" type="button" data-bs-target="#carouselJenis" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselJenis" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button> --}}
+                            <div class="carousel-inner">
+                            <div class="carousel-item active" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/charteux cat.jpg" class="d-block w-100" alt="..." >
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Chartreux Cat</h5>
+                                <p>Domestik prancis, bulu pendek, badan besar berotot, bulu abu-abu dan silver, mata jingga.</p>
 
-                    </div>
+                            </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/bombay cat.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Bombay cat</h5>
+                                <p>Domestik India, Bulu berwarna hitam, kepala bundar, hidungnya yang pendek, Tubuhnya yang berotot namun tidak kekar.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/siberian cat.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Siberian cat</h5>
+                                <p>Kucing hutan Rusia,  bulu lebat serta tubuh yang kuat, bentuk moncong pendek dan agak melengkung, sorot mata bulat dengan warna yang cerah.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/havana brown cat.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Havana brown cat</h5>
+                                <p>Bulu abu-abu pendek dan berkilau, tubuh ramping dan berotot, mata hijau, Wajah simetris, wajah berbentuk segitiga.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/russian blue cat.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Russian blue </h5>
+                                <p>Asal Rusia, Bulu biru tebal, leher pendek, badan panjang dan ramping, warna mata hijau mencolok.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/manx cat.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Manx cat</h5>
+                                <p>Berasal dari Britania Raya, tidak memiliki ekor, mata besar dan bulat,  dada lebar dan tulang punggung melengkung sampai pinggul.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/scottish fold cat.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Scottish fold</h5>
+                                <p>Domestik Skotlandia, kepala bulat lucu, telinga terlipat ke bawah, mata lebar dan besar, leher pendek, bulunya sedang serta tidak begitu lebat
+                                .</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/somali cat.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Somali cat</h5>
+                                <p>Domestik somalia, abyssinian, semi long hair, telinga lebar, ekor lebat, tubuh sedang dan otot.
+                                </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/sphynx cat.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Sphynx cat</h5>
+                                <p>Domestik kanada, tanpa bulu, perawakan ramping namun berotot, kaki panjang dan ramping, mata besar dan bulat  aktif dan penyayang.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/ragdoll.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Ragdoll cat</h5>
+                                <p>Domestik AS, bulu tidak terlalu panjang, tubuh relatif besar, wajah bulat, mata berwarna biru, bulu terang dengan bagian wajah, telinga, kaki, dan ekor yang cenderung gelap.
+                                </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/maine coon.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Maine coon cat</h5>
+                                <p>Domestik Persia, giant cat, wajah mirip singa, bulu lebat, ekor panjang, tulang kuat dan besar.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="bg-jenis">
+                                <div id="overlay">
+                                <img src="img/cat/himalayan.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Himalayan cat</h5>
+                                <p>Persilangan ras persia dan siam, warna bulu yang berubah seiring bertambahnya usia, ras kucing bermata biru.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselJenis" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselJenis" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                              </button>
+                        </div>
+                        {{-- <button class="carousel-control-prev" id="btnNext" type="button" data-bs-target="#carouselJenis" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselJenis" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button> --}}
+
                 </div>
             </div>
+        </div>
     </section>
 <section class="kucing_hilang" id="kucinghilang">
     <div class="container-fluid">
@@ -508,6 +505,7 @@
 
 
         </div>
+
 </div>
 </section>
 <section class="adopsi" id="adopsi">
@@ -543,7 +541,7 @@
                 </div>
                 </div>
             </div>
-
+        </div>
 
     </div>
 </section>
@@ -553,9 +551,10 @@
             <div class="jumbotron">
                 <div class="container-jumbotron">
                 <h1>Salurkan Donasi Anda</h1>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusamus rem cupiditate, accusantium soluta nulla, quidem repudiandae magni vel natus quam aliquam corporis inventore</p>
+                <p class="lead">Felvy melakukan open donasi dengan tujuan menolong kucing yang sakit dan terluka menjadi sehat kembali, selain itu dana donasi yang terkumpul juga akan kami dedikasikan untuk memberi makan kucing liar di jalanan agar memiliki kesempatan hidup lebih baik kedepannya.
+                </p>
                 <hr class="my-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod perferendis tenetur repudiandae voluptatibus magni tempore nulla obcaecati dolore totam nemo!</p>
+                <p>Tidak hanya berdonasi, teman-teman juga bisa membantu dengan cara menyebarkan halaman galang dana ini ke orang-orang terdekat Atau Para Pencinta Kucing Dan Hewan Liar Lainnya agar semakin banyak orang yang ikut membantu.</p>
                 <p class="lead">
                     <a class="btn btn-primary btn-lg" role="button" data-bs-toggle="modal" data-bs-target="#ModalDonasi">Donasi</a>
                 </p>
@@ -590,10 +589,13 @@
         </div>
     </section>
 </div>
+
+
+
 {{-- javascript --}}
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 {{-- javascript --}}
 
 {{-- code javascript --}}
@@ -630,7 +632,5 @@
     });
     </script>
 {{-- code javascript --}}
-
-
 </body>
 </html>

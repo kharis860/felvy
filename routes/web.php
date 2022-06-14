@@ -24,3 +24,8 @@ Route::get('/felvy0', function () {
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::post('/hilang/create', [hilangController::class, 'store']);
+Route::post('/hilang/create', [hilangController::class, 'create']);
+Route::get('/token', function(){
+    return csrf_token();
+});
