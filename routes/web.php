@@ -16,11 +16,16 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('felvy');
 });
 Route::get('/felvy0', function () {
-    return view('felvy');
+    return view('felvypro');
 });
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::post('/hilang/create', [hilangController::class, 'store']);
+Route::post('/hilang/create', [hilangController::class, 'create']);
+Route::get('/token', function(){
+    return csrf_token();
+});
